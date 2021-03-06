@@ -18,7 +18,7 @@ weather_details.textContent = '';
 async function getWeather() {
     let city = searchValue.value;
     // API url
-    const url = `http://api.weatherstack.com/current?access_key=e5f4d4e154172b6c71c35ab398454479&query=${city}`;
+    const url = `https://crossorigin.me/http://api.weatherstack.com/current?access_key=e5f4d4e154172b6c71c35ab398454479&query=${city}`;
     loading.textContent = 'Loading...';
 
     // Fetching data from the api url
