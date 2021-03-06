@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.app-title {
+    text-align: center;
+    background: lightgrey;
+    margin: 0;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    border-color: lightblue;
+    border: 1px solid lightgreen;
+    
+}
+
+button {
+    background-color: lightskyblue;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.about, .home {
+    margin-right: 11px;
+}
+
+.weather-details, .search-city {
+    width: 20%;
+    margin: auto;
+}
+
+.about-container, .help-container {
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .weather-details, .search-city {
+        width: 90%;
+    }
+}
