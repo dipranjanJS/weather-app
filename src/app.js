@@ -9,7 +9,7 @@ const path = require('path');
 
 // Creating app and using express
 const app = express();
-
+const port = process.env.PORT || 3000
 // Delcaring public directory
 const publicPath = path.join(__dirname, '../public');
 
@@ -47,6 +47,6 @@ app.get('/help', (req, res) => {
 });
 
 // Creating server and setting port at 3000
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("server is up and running");
 });
